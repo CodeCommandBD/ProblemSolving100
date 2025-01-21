@@ -6,6 +6,5 @@ const secuence = (inputArray) =>{
     }
     return true
 }
-
 console.log(secuence([1,2,3]));
 console.log(secuence([1,10,3]));

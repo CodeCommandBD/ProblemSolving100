@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background: gray;
+        }
+        .container{
+            background: white;
+            padding: 20px;
+            border: 1px solid black;
+            max-width: 700px;
+            width: 100%;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        .products{
+            display: flex;
+            justify-content: space-between;
+        }
+        .product{
+            text-align: center;
+            padding: 10px;
+            margin: 0 10px;
+            background: rgb(161, 93, 230);
+            border-radius: 5px;
+            width: 30%;
+            color: white;
+        }
+        .product h2{
+            margin: 0;
+        }
+        button{
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        #buy_btn{
+            background: #007bff;
+        }
+        .cart{
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .cart ul{
+            list-style: none;
+        }
+        .cart ul li{
+            margin-bottom: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mini E-Commerce Site</h1>
+        <div class="products">
+            <div class="product">
+                <h2>iphne2</h2>
+                <p>$500</p>
+                <button class="add-to" data-name="iphone2" data-price="500">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Oppo</h2>
+                <p>$300</p>
+                <button class="add-to" data-name="Oppo" data-price="300">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Rog</h2>
+                <p>$500</p>
+                <button class="add-to" data-name="Rog" data-price="400">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Shoping Card</h2>
+        <div class="cart">
+            <ul class="cart-item">
+
+            </ul>
+            <p id="total-price">Total: $<span></span></p>
+            <button id="buy_btn">Buy Now</button>
+        </div>
+    </div>
+
+    <script src="./Ecommerce.js"></script>
+</body>
+</html>

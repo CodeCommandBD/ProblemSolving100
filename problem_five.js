@@ -4,8 +4,11 @@ const prime=(num)=>{
         for(let j = 2; j<num; j++){
             if(i===j){
                 total += i
+                console.log(i);
+                
             }
             if(i%j === 0){
+                console.log(i%j);
                 break
             }
         }
